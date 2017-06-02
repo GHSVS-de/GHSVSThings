@@ -22,7 +22,7 @@ blah blubber.
 
 Elle pelle haus verpalle.
 
-{fotorama: cat=888,title=3,nav=pips} 
+{fotorama: cat=888,title=3,nav=pips  } 
 
 rense pemse 
 
