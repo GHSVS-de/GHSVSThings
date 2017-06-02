@@ -1,5 +1,5 @@
 <?php
-/**
+/*
 Wie man bspw. aus einem Plugin-Tag
 
 {fotorama: cat=888,title=3,nav=pips}
