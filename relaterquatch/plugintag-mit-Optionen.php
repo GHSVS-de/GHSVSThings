@@ -108,23 +108,25 @@ if (strpos($article->text, '{fotorama:') !== false)
 						$html .= 'Navigation des Fotorama ist: ' . $navigation . "! ";
 						$html .= 'Title des Fotorama ist: ' . $title . "! ]] ";
 
-						// Verwende ressourcenschonendes str_replace statt preg_replace.
-						// Das können wir, weil $matches[$i][0] der exakte String des Fundes ist, also z.B.
-						//  {fotorama:    cat   =  963,    nav=linse} mit Leerzeichen und Kram.
-						$article->text = str_replace($matches[$i][0], $html, $article->text);
 					}
 
 				}
 
 			}
+			
+			// Ersetzt auch Muster mit fehlender cat, wo $html = ''.
+			// Verwende ressourcenschonendes str_replace statt preg_replace.
+			// Das können wir, weil $matches[$i][0] der exakte String des Fundes ist, also z.B.
+			//  {fotorama:    cat   =  963,    nav=linse} mit Leerzeichen und Kram.
+			$article->text = str_replace($matches[$i][0], $html, $article->text);
 
 		} 
 
 	}
 
 	// Abschließend noch mal ressourcenschonender testen, ob noch unvollständige Tags enthalten.
-	// Bspw. welche, die zwar korrekt das Muster matchen, aber kein cat=[INTEGER] enthielten.
-	// Wobei man das vermutlich auch oben irgendwo mit str_replace hätte machen können.
+	// Wobei im obigen Kontext wohl unnütig, weil das Muster oben zu hart formuliert ist, so, dass
+	// hier gar nichts gefunden werden kann. Also: Ggf. neues Putzmuster kreieren.
 	if (strpos($article->text, '{fotorama:') !== false)
 	{
 		// Dann erst diese mit preg_ entfernen. 
