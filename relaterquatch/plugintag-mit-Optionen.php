@@ -1,3 +1,4 @@
+<?php
 /**
 Wie man bspw. aus einem Plugin-Tag
 
