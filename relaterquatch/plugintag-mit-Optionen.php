@@ -50,8 +50,8 @@ if (strpos($article->text, '{fotorama:') !== false)
 
 			// Grobe Prüfung: Optionen grundlegend OK:
    			if (
-				($Optionen = trim($matchArray[1])) &&
-				strpos($Optionen, '=') !== false
+				($Optionen = trim($matchArray[1]))
+				&& strpos($Optionen, '=') !== false
 			){
 
 				// Init Ablage-Array für Optionen und Werte des aktuellen fotorama:
