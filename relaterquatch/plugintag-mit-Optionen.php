@@ -118,6 +118,7 @@ if (strpos($article->text, '{fotorama:') !== false)
 			// Verwende ressourcenschonendes str_replace statt preg_replace.
 			// Das können wir, weil $matches[$i][0] der exakte String des Fundes ist, also z.B.
 			//  {fotorama:    cat   =  963,    nav=linse} mit Leerzeichen und Kram.
+			// Man könnte auch $matchArray[0] verwenden.
 			$article->text = str_replace($matches[$i][0], $html, $article->text);
 
 		} 
