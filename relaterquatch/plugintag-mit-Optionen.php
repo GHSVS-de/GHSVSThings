@@ -91,7 +91,7 @@ if (strpos($article->text, '{fotorama:') !== false)
 					// catid auslesen.
 					$catid = (int) $OptionenUndWerte->get('cat');
 
-					// Wenn catid brauchbar (numerisch größer 0):
+					// Wenn catid brauchbar (numerisch ungleich 0):
 					if ($catid)
 					{
 
