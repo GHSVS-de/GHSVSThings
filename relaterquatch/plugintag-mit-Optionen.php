@@ -99,7 +99,7 @@ if (strpos($article->text, '{fotorama:') !== false)
 						// Ansonsten den Default-Wert 'dots'
 						$navigation = $OptionenUndWerte->get('nav', 'dots');
 
-						// Wenn title=irgendwas eingetragen wurde nimm das für $navigation.
+						// Wenn title=irgendwas eingetragen wurde nimm das für $title.
 						// Ansonsten den Default-Wert '1'
 						$title = $OptionenUndWerte->get('title', '1');
 
