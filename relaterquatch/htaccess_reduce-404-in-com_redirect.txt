@@ -1,0 +1,17 @@
+SetEnvIfNoCase Request_URI "\/(editor\/filemanager|ckeditor|uploadify|allrounder-j1\.6)\/" bad_bot
+SetEnvIfNoCase Request_URI "\/(fckeditor|RTE_popup_file_atch)" bad_bot
+SetEnvIfNoCase Request_URI "\/com_(jnewsletter|admintools)\/" bad_bot
+SetEnvIfNoCase Request_URI "\/wp-(content|admin|login|includes|images)\/" bad_bot
+SetEnvIfNoCase Request_URI "\/wp-(login|cron|sbb)\.php$" bad_bot
+#SetEnvIfNoCase Request_URI "\/(sfx|admin|restore|ofc_upload_image|xmlrpc)\.php$" bad_bot
+SetEnvIfNoCase Request_URI "\/(uploadtester|connector)\.(php|asp|aspx)$" bad_bot
+SetEnvIfNoCase Request_URI "\/(nyet)\.gif$" bad_bot
+SetEnvIfNoCase Request_URI "\/(filezilla|browserconfig)\.xml$" bad_bot
+SetEnvIfNoCase Request_URI "\/(config|ftp_pwd|administrator|ext|adoni|c0nfig|up|ytt|error)\.php$" bad_bot
+SetEnvIfNoCase Request_URI "\/(indax|cod|license|versions|info|maps|yt2|sfn|axmlprc|sqlibak|reade|media-views-rtl|jm_license)\.php$" bad_bot
+SetEnvIfNoCase Request_URI "\/(mod_j1module|j1template|mod_j2module|jlogo)\.php$" bad_bot
+<Limit GET POST HEAD>
+ Order Allow,Deny
+ Allow from all
+ Deny from env=bad_bot
+</Limit>
