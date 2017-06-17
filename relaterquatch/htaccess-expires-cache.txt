@@ -1,0 +1,31 @@
+## EXPIRES CACHING - START ##
+
+## Legen Sie aber nicht mehr als ein Jahr fest, da dies gegen die RFC-Richtlinien verstößt.
+## Zu den zwischenspeicherbaren Ressourcen gehören unter anderem JavaScript- und CSS-Dateien, 
+## Bilddateien und andere binäre Objektdateien wie z. B. Mediendateien und PDFs. HTML ist im 
+## Allgemeinen nicht statisch und sollte standardmäßig nicht als zwischenspeicherbar betrachtet 
+## werden.
+<IfModule mod_expires.c>
+ ExpiresActive On
+ #ExpiresByType text/html "access 1 month"
+
+ <FilesMatch "\.(css|js)$">
+  ExpiresDefault "access 1 month"
+ </FilesMatch>
+ <FilesMatch "\.(jpg|jpeg|gif|png|ico)$">
+  ExpiresDefault "access 6 months"
+ </FilesMatch>
+ <FilesMatch "\.(mp3|flv|pdf|woff|eot|ttf|otf|woff2|svg)$">
+  ExpiresDefault "access 1 year"
+ </FilesMatch>
+
+ # Add correct content-type for fonts
+ AddType application/vnd.ms-fontobject .eot
+ AddType font/ttf .ttf
+ AddType font/otf .otf
+ AddType font/x-woff .woff
+ AddType image/svg+xml .svg
+	AddType application/font-woff2 .woff2
+ # Compress compressible fonts
+ AddOutputFilterByType DEFLATE font/ttf font/x-woff font/otf image/svg+xml application/font-woff2
+</IfModule>
