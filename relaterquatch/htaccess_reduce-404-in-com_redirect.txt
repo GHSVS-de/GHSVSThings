@@ -1,9 +1,16 @@
+### Hacker wegen zu viel in Umleitungskomponente
+### Siehe auch https://github.com/GHSVS-de/GHSVSThings/blob/master/relaterquatch/htaccess_reduce-404-in-com_redirect.txt
+
 SetEnvIfNoCase Request_URI "\/(editor\/filemanager|ckeditor|uploadify|allrounder-j1\.6)\/" bad_bot
 SetEnvIfNoCase Request_URI "\/(fckeditor|RTE_popup_file_atch)" bad_bot
 SetEnvIfNoCase Request_URI "\/com_(jnewsletter|admintools)\/" bad_bot
 SetEnvIfNoCase Request_URI "\/wp-(content|admin|login|includes|images)\/" bad_bot
 SetEnvIfNoCase Request_URI "\/wp-(login|cron|sbb)\.php$" bad_bot
+
+### restore: Looks like proplems in Joomla with AJAX requests while updates.
 #SetEnvIfNoCase Request_URI "\/(sfx|admin|restore|ofc_upload_image|xmlrpc)\.php$" bad_bot
+SetEnvIfNoCase Request_URI "\/(sfx|admin|ofc_upload_image|xmlrpc)\.php$" bad_bot
+
 SetEnvIfNoCase Request_URI "\/(uploadtester|connector)\.(php|asp|aspx)$" bad_bot
 SetEnvIfNoCase Request_URI "\/(nyet)\.gif$" bad_bot
 SetEnvIfNoCase Request_URI "\/(filezilla|browserconfig)\.xml$" bad_bot
