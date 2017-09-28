@@ -17,6 +17,10 @@ SetEnvIfNoCase Request_URI "\/(filezilla|browserconfig)\.xml$" bad_bot
 SetEnvIfNoCase Request_URI "\/(cache|config|ftp_pwd|administrator|ext|adoni|c0nfig|up|ytt|error)\.php$" bad_bot
 SetEnvIfNoCase Request_URI "\/(indax|cod|license|versions|info|maps|yt2|sfn|axmlprc|sqlibak|reade|media-views-rtl|jm_license)\.php$" bad_bot
 SetEnvIfNoCase Request_URI "\/(mod_j1module|j1template|mod_j2module|jlogo|j2template|jtemplate)\.php$" bad_bot
+
+## php files in directory /images/
+SetEnvIfNoCase Request_URI "\/images\/.*\.php$" bad_bot
+
 <Limit GET POST HEAD>
  Order Allow,Deny
  Allow from all
