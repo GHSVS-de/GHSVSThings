@@ -1,3 +1,6 @@
+/**
+Siehe http://www.joomlaportal.de/joomla-3-x-templates-und-design/329810-bootstrap-master-template-3-spalten-im-footer.html
+*/
 function modChrome_html5bs3($module, &$params, &$attribs)
 {
  $moduleTag      = $params->get('module_tag', 'div');
