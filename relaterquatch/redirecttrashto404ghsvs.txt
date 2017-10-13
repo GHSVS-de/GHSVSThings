@@ -1,0 +1,27 @@
+function onAfterRoute() {
+ 
+ if ($this->app->isClient('administrator'))
+ {
+  return;
+ }
+
+ $uri = JUri::getInstance();
+ $path = $uri->getPath();
+ $query = $uri->getQuery();
+ 
+ $paths = array(
+  '',
+  '/',
+  'index.php',
+  '/index.php',
+  '/index.php/',
+ );
+ if (in_array($path, $paths))
+ {
+  if (preg_match('/^start=\d+(&|)/', $query))
+  {
+   $this->app->redirect('/', 301);
+  }
+ }
+ return;
+}
