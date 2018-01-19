@@ -5,7 +5,7 @@ JLayout password_hint.php
 
 Copy to path:
 
-templates/YOUR-TEMPLATE/layouts/joomla/password_hint.php
+templates/YOUR-TEMPLATE/html/layouts/joomla/password_hint.php
 
 
 Create language string:
