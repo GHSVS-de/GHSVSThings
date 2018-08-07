@@ -6,6 +6,8 @@ SetEnvIfNoCase Request_URI "\/(fckeditor|RTE_popup_file_atch)" bad_bot
 SetEnvIfNoCase Request_URI "\/com_(jnewsletter|admintools)\/" bad_bot
 SetEnvIfNoCase Request_URI "\/wp-(content|admin|login|includes|images)\/" bad_bot
 SetEnvIfNoCase Request_URI "\/wp-(login|cron|sbb)\.php$" bad_bot
+### WP, too
+SetEnvIfNoCase Request_URI "\/manager\/index\.php$" bad_bot
 
 ### restore: Looks like proplems in Joomla with AJAX requests while updates.
 #SetEnvIfNoCase Request_URI "\/(sfx|admin|restore|ofc_upload_image|xmlrpc)\.php$" bad_bot
@@ -17,6 +19,10 @@ SetEnvIfNoCase Request_URI "\/(filezilla|browserconfig)\.xml$" bad_bot
 SetEnvIfNoCase Request_URI "\/(cache|config|ftp_pwd|administrator|ext|adoni|c0nfig|up|ytt|error)\.php$" bad_bot
 SetEnvIfNoCase Request_URI "\/(indax|cod|license|versions|info|maps|yt2|sfn|axmlprc|sqlibak|reade|media-views-rtl|jm_license)\.php$" bad_bot
 SetEnvIfNoCase Request_URI "\/(mod_j1module|j1template|mod_j2module|jlogo|j2template|jtemplate)\.php$" bad_bot
+
+### Known extension exploits. Please check if you use the extensions in a secure version and disable related lines then.
+SetEnvIfNoCase Request_URI "\/mod_ppc_simple_spotlight\/elements\/upload_file\.php$" bad_bot
+
 <Limit GET POST HEAD>
  Order Allow,Deny
  Allow from all
