@@ -1,12 +1,15 @@
 <?php
 /*
-en-GB ($mama) und de-DE ($child) Datei werden beide einzeln nach evtl. doppelten Lang-Platzhaltern durchsucht. Wenn findet, Abbruch und Meldung zum Korrigieren.
+en-GB ($mama) und de-DE ($child) Datei werden beide einzeln nach evtl. doppelten Lang-Platzhaltern durchsucht.
+Wenn findet, Abbruch und Meldung zum Korrigieren.
 
 Anschleißend:
 
-Basierend auf dem $mama-INI-File wird das $child-File nach fehlenden Strings durchsucht. Falls welche fehlen, werden die englischen mit einleitendem ";;;;;;;;;;" eingesetzt.
+Basierend auf dem $mama-INI-File wird das $child-File nach fehlenden Strings durchsucht.
+Falls welche fehlen, werden die aus $mama mit einleitendem ";;;;;;;;;;" in $child eingesetzt.
 
-Beide Dateien werden alfabetisch sortiert und jeweils in eine Datei *-copy.ini im selben Ordner geschrieben. Original bleibt also unberührt.
+Beide Dateien werden alfabetisch sortiert und jeweils in eine Datei *-copy.ini im selben Ordner geschrieben.
+Original bleibt also unberührt.
 */
 $langsPath = '/plugins/system/hyphenateghsvs/language/';
 $filePart  = 'plg_system_hyphenateghsvs';
