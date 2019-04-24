@@ -65,6 +65,29 @@ $lang->load('plg_user_profile', JPATH_ADMINISTRATOR);
 					<?php endif; ?>
 					<?php // Iterate through the fields in the set and display them. ?>
 					<?php foreach ($fields as $field) : ?>
+					
+if ($field->fieldname == 'privacy' && JFactory::getUser()->requireReset)
+{?>
+
+/*
+ !!! https://asubdomain-of.example.org/privacy-text.html
+ is a static HTML page that is located on another domain than Joomla (running on example.org).
+ E.g. in a subdoamin asubdomain-of.example.org.
+*/
+	<div class="control-group">
+		<div class="control-label">
+			<div style="display:none;"><?php echo $field->label; ?></div>
+<a href="https://asubdomain-of.example.org/privacy-text.html" class="modal" rel="{handler: 'iframe', size: {x:800, y:500}}">Privacy Text<span class="star">&nbsp;*</span></a>
+		</div>
+		<div class="controls">
+			<?php echo $field->input; ?>
+		</div>
+	</div>
+<?php 
+	continue;
+}
+?>
+
 						<?php // If the field is hidden, just display the input. ?>
 						<?php if ($field->hidden) : ?>
 							<?php echo $field->input; ?>
