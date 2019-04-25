@@ -68,6 +68,9 @@ $lang->load('plg_user_profile', JPATH_ADMINISTRATOR);
 					
 if ($field->fieldname == 'privacy' && JFactory::getUser()->requireReset)
 {?>
+// Override for Joomla 3 > 3.9.0.
+// See https://github.com/joomla/joomla-cms/issues/24719
+// See https://github.com/joomla/joomla-cms/issues/24719#issuecomment-486311394
 
 /*
  !!! https://asubdomain-of.example.org/privacy-text.html
