@@ -1,5 +1,7 @@
 <?php
 /*
+https://github.com/GHSVS-de/GHSVSThings/blob/master/relaterquatch/language-files-synchronize.php
+
 en-GB ($mama) und de-DE ($child) Datei werden beide einzeln nach evtl. doppelten Lang-Platzhaltern durchsucht.
 Wenn findet, Abbruch und Meldung zum Korrigieren.
 
