@@ -67,12 +67,12 @@ ksort($mamaStrings);
 
 foreach ($mamaStrings as $key => $string)
 {
-	$mamaStrings[$key] = str_replace('"', '_QQ_', $string);
+	$mamaStrings[$key] = str_replace(array('"_QQ_"', '"'), '_QQ_', $string);
 }
 
 foreach ($childStrings as $key => $string)
 {
-	$childStrings[$key] = str_replace('"', '_QQ_', $string);
+	$childStrings[$key] = str_replace(array('"_QQ_"', '"'), '_QQ_', $string);
 }
 
 $collectIdenticals = array();
