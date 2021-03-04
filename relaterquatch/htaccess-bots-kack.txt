@@ -1,0 +1,377 @@
+#https://raw.githubusercontent.com/bluedragonz/bad-bot-blocker/master/.htaccess
+# Block Bad Bots & Scrapers
+SetEnvIfNoCase User-Agent "Aboundex" bad_bot
+SetEnvIfNoCase User-Agent "80legs" bad_bot
+SetEnvIfNoCase User-Agent "360Spider" bad_bot
+SetEnvIfNoCase User-Agent "^Java" bad_bot
+SetEnvIfNoCase User-Agent "^Cogentbot" bad_bot
+SetEnvIfNoCase User-Agent "^Alexibot" bad_bot
+SetEnvIfNoCase User-Agent "^asterias" bad_bot
+SetEnvIfNoCase User-Agent "^attach" bad_bot
+SetEnvIfNoCase User-Agent "^BackDoorBot" bad_bot
+# Meiner
+SetEnvIfNoCase User-Agent "^BacklinkCrawler" bad_bot
+
+SetEnvIfNoCase User-Agent "^BackWeb" bad_bot
+SetEnvIfNoCase User-Agent "Bandit" bad_bot
+SetEnvIfNoCase User-Agent "^BatchFTP" bad_bot
+SetEnvIfNoCase User-Agent "^Bigfoot" bad_bot
+SetEnvIfNoCase User-Agent "^Black.Hole" bad_bot
+SetEnvIfNoCase User-Agent "^BlackWidow" bad_bot
+SetEnvIfNoCase User-Agent "^BlowFish" bad_bot
+SetEnvIfNoCase User-Agent "^BotALot" bad_bot
+SetEnvIfNoCase User-Agent "Buddy" bad_bot
+SetEnvIfNoCase User-Agent "^BuiltBotTough" bad_bot
+SetEnvIfNoCase User-Agent "^Bullseye" bad_bot
+SetEnvIfNoCase User-Agent "^BunnySlippers" bad_bot
+SetEnvIfNoCase User-Agent "^Cegbfeieh" bad_bot
+SetEnvIfNoCase User-Agent "^CheeseBot" bad_bot
+SetEnvIfNoCase User-Agent "^CherryPicker" bad_bot
+SetEnvIfNoCase User-Agent "^ChinaClaw" bad_bot
+SetEnvIfNoCase User-Agent "Collector" bad_bot
+SetEnvIfNoCase User-Agent "Copier" bad_bot
+SetEnvIfNoCase User-Agent "^CopyRightCheck" bad_bot
+SetEnvIfNoCase User-Agent "^cosmos" bad_bot
+SetEnvIfNoCase User-Agent "^Crescent" bad_bot
+SetEnvIfNoCase User-Agent "^Custo" bad_bot
+SetEnvIfNoCase User-Agent "^AIBOT" bad_bot
+SetEnvIfNoCase User-Agent "^DISCo" bad_bot
+SetEnvIfNoCase User-Agent "^DIIbot" bad_bot
+SetEnvIfNoCase User-Agent "^DittoSpyder" bad_bot
+SetEnvIfNoCase User-Agent "^Download\ Demon" bad_bot
+SetEnvIfNoCase User-Agent "^Download\ Devil" bad_bot
+SetEnvIfNoCase User-Agent "^Download\ Wonder" bad_bot
+SetEnvIfNoCase User-Agent "^dragonfly" bad_bot
+SetEnvIfNoCase User-Agent "^Drip" bad_bot
+SetEnvIfNoCase User-Agent "^eCatch" bad_bot
+SetEnvIfNoCase User-Agent "^EasyDL" bad_bot
+SetEnvIfNoCase User-Agent "^ebingbong" bad_bot
+SetEnvIfNoCase User-Agent "^EirGrabber" bad_bot
+SetEnvIfNoCase User-Agent "^EmailCollector" bad_bot
+SetEnvIfNoCase User-Agent "^EmailSiphon" bad_bot
+SetEnvIfNoCase User-Agent "^EmailWolf" bad_bot
+SetEnvIfNoCase User-Agent "^EroCrawler" bad_bot
+SetEnvIfNoCase User-Agent "^Exabot" bad_bot
+SetEnvIfNoCase User-Agent "^Express\ WebPictures" bad_bot
+SetEnvIfNoCase User-Agent "Extractor" bad_bot
+SetEnvIfNoCase User-Agent "^EyeNetIE" bad_bot
+SetEnvIfNoCase User-Agent "^Foobot" bad_bot
+SetEnvIfNoCase User-Agent "^flunky" bad_bot
+SetEnvIfNoCase User-Agent "^FrontPage" bad_bot
+SetEnvIfNoCase User-Agent "^Go-Ahead-Got-It" bad_bot
+SetEnvIfNoCase User-Agent "^gotit" bad_bot
+SetEnvIfNoCase User-Agent "^GrabNet" bad_bot
+SetEnvIfNoCase User-Agent "^Grafula" bad_bot
+SetEnvIfNoCase User-Agent "^Harvest" bad_bot
+SetEnvIfNoCase User-Agent "^hloader" bad_bot
+SetEnvIfNoCase User-Agent "^HMView" bad_bot
+SetEnvIfNoCase User-Agent "^HTTrack" bad_bot
+SetEnvIfNoCase User-Agent "^humanlinks" bad_bot
+SetEnvIfNoCase User-Agent "^IlseBot" bad_bot
+SetEnvIfNoCase User-Agent "^Image\ Stripper" bad_bot
+SetEnvIfNoCase User-Agent "^Image\ Sucker" bad_bot
+SetEnvIfNoCase User-Agent "Indy\ Library" bad_bot
+SetEnvIfNoCase User-Agent "^InfoNaviRobot" bad_bot
+SetEnvIfNoCase User-Agent "^InfoTekies" bad_bot
+SetEnvIfNoCase User-Agent "^Intelliseek" bad_bot
+SetEnvIfNoCase User-Agent "^InterGET" bad_bot
+SetEnvIfNoCase User-Agent "^Internet\ Ninja" bad_bot
+SetEnvIfNoCase User-Agent "^Iria" bad_bot
+SetEnvIfNoCase User-Agent "^Jakarta" bad_bot
+SetEnvIfNoCase User-Agent "^JennyBot" bad_bot
+SetEnvIfNoCase User-Agent "^JetCar" bad_bot
+SetEnvIfNoCase User-Agent "^JOC" bad_bot
+SetEnvIfNoCase User-Agent "^JustView" bad_bot
+SetEnvIfNoCase User-Agent "^Jyxobot" bad_bot
+SetEnvIfNoCase User-Agent "^Kenjin.Spider" bad_bot
+SetEnvIfNoCase User-Agent "^Keyword.Density" bad_bot
+SetEnvIfNoCase User-Agent "^larbin" bad_bot
+SetEnvIfNoCase User-Agent "^LexiBot" bad_bot
+SetEnvIfNoCase User-Agent "^lftp" bad_bot
+SetEnvIfNoCase User-Agent "^libWeb/clsHTTP" bad_bot
+SetEnvIfNoCase User-Agent "^likse" bad_bot
+SetEnvIfNoCase User-Agent "^LinkextractorPro" bad_bot
+SetEnvIfNoCase User-Agent "^LinkScan/8.1a.Unix" bad_bot
+SetEnvIfNoCase User-Agent "^LNSpiderguy" bad_bot
+SetEnvIfNoCase User-Agent "^LinkWalker" bad_bot
+SetEnvIfNoCase User-Agent "^lwp-trivial" bad_bot
+SetEnvIfNoCase User-Agent "^LWP::Simple" bad_bot
+SetEnvIfNoCase User-Agent "^Magnet" bad_bot
+SetEnvIfNoCase User-Agent "^Mag-Net" bad_bot
+SetEnvIfNoCase User-Agent "^MarkWatch" bad_bot
+SetEnvIfNoCase User-Agent "^Mass\ Downloader" bad_bot
+SetEnvIfNoCase User-Agent "^Mata.Hari" bad_bot
+SetEnvIfNoCase User-Agent "^Memo" bad_bot
+SetEnvIfNoCase User-Agent "^Microsoft.URL" bad_bot
+SetEnvIfNoCase User-Agent "^Microsoft\ URL\ Control" bad_bot
+SetEnvIfNoCase User-Agent "^MIDown\ tool" bad_bot
+SetEnvIfNoCase User-Agent "^MIIxpc" bad_bot
+SetEnvIfNoCase User-Agent "^Mirror" bad_bot
+SetEnvIfNoCase User-Agent "^Missigua\ Locator" bad_bot
+SetEnvIfNoCase User-Agent "^Mister\ PiX" bad_bot
+SetEnvIfNoCase User-Agent "^moget" bad_bot
+SetEnvIfNoCase User-Agent "^Mozilla/3.Mozilla/2.01" bad_bot
+SetEnvIfNoCase User-Agent "^Mozilla.*NEWT" bad_bot
+SetEnvIfNoCase User-Agent "^NAMEPROTECT" bad_bot
+SetEnvIfNoCase User-Agent "^Navroad" bad_bot
+SetEnvIfNoCase User-Agent "^NearSite" bad_bot
+SetEnvIfNoCase User-Agent "^NetAnts" bad_bot
+SetEnvIfNoCase User-Agent "^Netcraft" bad_bot
+SetEnvIfNoCase User-Agent "^NetMechanic" bad_bot
+SetEnvIfNoCase User-Agent "^NetSpider" bad_bot
+SetEnvIfNoCase User-Agent "^Net\ Vampire" bad_bot
+SetEnvIfNoCase User-Agent "^NetZIP" bad_bot
+SetEnvIfNoCase User-Agent "^NextGenSearchBot" bad_bot
+SetEnvIfNoCase User-Agent "^NG" bad_bot
+SetEnvIfNoCase User-Agent "^NICErsPRO" bad_bot
+SetEnvIfNoCase User-Agent "^niki-bot" bad_bot
+SetEnvIfNoCase User-Agent "^NimbleCrawler" bad_bot
+SetEnvIfNoCase User-Agent "^Ninja" bad_bot
+SetEnvIfNoCase User-Agent "^NPbot" bad_bot
+SetEnvIfNoCase User-Agent "^Octopus" bad_bot
+SetEnvIfNoCase User-Agent "^Offline\ Explorer" bad_bot
+SetEnvIfNoCase User-Agent "^Offline\ Navigator" bad_bot
+SetEnvIfNoCase User-Agent "^Openfind" bad_bot
+SetEnvIfNoCase User-Agent "^OutfoxBot" bad_bot
+SetEnvIfNoCase User-Agent "^PageGrabber" bad_bot
+SetEnvIfNoCase User-Agent "^Papa\ Foto" bad_bot
+SetEnvIfNoCase User-Agent "^pavuk" bad_bot
+SetEnvIfNoCase User-Agent "^pcBrowser" bad_bot
+SetEnvIfNoCase User-Agent "^PHP\ version\ tracker" bad_bot
+SetEnvIfNoCase User-Agent "^Pockey" bad_bot
+SetEnvIfNoCase User-Agent "^ProPowerBot/2.14" bad_bot
+SetEnvIfNoCase User-Agent "^ProWebWalker" bad_bot
+SetEnvIfNoCase User-Agent "^psbot" bad_bot
+# Irgendwelche Adressensammler laut Webseite finbot.com
+SetEnvIfNoCase User-Agent "^finbot" bad_bot
+# Meiner:
+SetEnvIfNoCase User-Agent "Pixray" bad_bot
+# Komplett dubios. Nichts drüber zu erfahren.
+SetEnvIfNoCase User-Agent "savetheworldheritage.org" bad_bot
+SetEnvIfNoCase User-Agent "seoscanners.net" bad_bot
+# Ignoriert robots.txt
+SetEnvIfNoCase User-Agent "seokicks" bad_bot
+
+SetEnvIfNoCase User-Agent "\ adscanner/" bad_bot
+SetEnvIfNoCase User-Agent "Mediatoolkitbot" bad_bot
+
+# SEO-Scheiß. Zwar auch in robots.txt.
+SetEnvIfNoCase User-Agent "OpenLinkProfiler" bad_bot
+
+# Da sie a) Möglichkeit verweigern per robots.txt diesen Spider einzeln auszuschließen.
+# b) SEO-Kacker sind
+# https://www.lipperhey.com/en/about/
+SetEnvIfNoCase User-Agent "Lipperhey" bad_bot
+# Vor dem wird gewarnt
+SetEnvIfNoCase User-Agent "wotbox" bad_bot
+# Total wirres Crawlen. Seite nennt keine robots.txt zum gezielten Ausschluss
+SetEnvIfNoCase User-Agent "it2media-domain-crawler" bad_bot
+
+# Hab ich auch in robots.txt. Akzeptiert angeblich, aber hier noch mal zur Sicherheit
+SetEnvIfNoCase User-Agent "XoviBot" bad_bot
+
+# SEO-Blahblah. Keine detaillierte Angabe zum Ausschluss per robots.txt
+SetEnvIfNoCase User-Agent "SearchmetricsBot" bad_bot
+
+# Ignoriert robots.txt. Ne, doch nicht. Mein Fehler
+#SetEnvIfNoCase User-Agent "DotBot" bad_bot
+
+SetEnvIfNoCase User-Agent "^Pump" bad_bot
+SetEnvIfNoCase User-Agent "^QueryN.Metasearch" bad_bot
+SetEnvIfNoCase User-Agent "^RealDownload" bad_bot
+SetEnvIfNoCase User-Agent "Reaper" bad_bot
+SetEnvIfNoCase User-Agent "Recorder" bad_bot
+SetEnvIfNoCase User-Agent "^ReGet" bad_bot
+SetEnvIfNoCase User-Agent "^RepoMonkey" bad_bot
+SetEnvIfNoCase User-Agent "^RMA" bad_bot
+SetEnvIfNoCase User-Agent "Siphon" bad_bot
+SetEnvIfNoCase User-Agent "^SiteSnagger" bad_bot
+SetEnvIfNoCase User-Agent "^SlySearch" bad_bot
+SetEnvIfNoCase User-Agent "^SmartDownload" bad_bot
+SetEnvIfNoCase User-Agent "^Snake" bad_bot
+SetEnvIfNoCase User-Agent "^Snapbot" bad_bot
+SetEnvIfNoCase User-Agent "^Snoopy" bad_bot
+SetEnvIfNoCase User-Agent "^sogou" bad_bot
+SetEnvIfNoCase User-Agent "^SpaceBison" bad_bot
+SetEnvIfNoCase User-Agent "^SpankBot" bad_bot
+SetEnvIfNoCase User-Agent "^spanner" bad_bot
+SetEnvIfNoCase User-Agent "^Sqworm" bad_bot
+SetEnvIfNoCase User-Agent "Stripper" bad_bot
+SetEnvIfNoCase User-Agent "Sucker" bad_bot
+SetEnvIfNoCase User-Agent "^SuperBot" bad_bot
+SetEnvIfNoCase User-Agent "^SuperHTTP" bad_bot
+SetEnvIfNoCase User-Agent "^Surfbot" bad_bot
+SetEnvIfNoCase User-Agent "^suzuran" bad_bot
+SetEnvIfNoCase User-Agent "^Szukacz/1.4" bad_bot
+SetEnvIfNoCase User-Agent "^tAkeOut" bad_bot
+SetEnvIfNoCase User-Agent "^Teleport" bad_bot
+SetEnvIfNoCase User-Agent "^Telesoft" bad_bot
+SetEnvIfNoCase User-Agent "^TurnitinBot/1.5" bad_bot
+SetEnvIfNoCase User-Agent "^The.Intraformant" bad_bot
+SetEnvIfNoCase User-Agent "^TheNomad" bad_bot
+SetEnvIfNoCase User-Agent "^TightTwatBot" bad_bot
+SetEnvIfNoCase User-Agent "^Titan" bad_bot
+SetEnvIfNoCase User-Agent "^True_Robot" bad_bot
+SetEnvIfNoCase User-Agent "^turingos" bad_bot
+SetEnvIfNoCase User-Agent "^TurnitinBot" bad_bot
+SetEnvIfNoCase User-Agent "^URLy.Warning" bad_bot
+SetEnvIfNoCase User-Agent "^Vacuum" bad_bot
+SetEnvIfNoCase User-Agent "^VCI" bad_bot
+SetEnvIfNoCase User-Agent "^VoidEYE" bad_bot
+SetEnvIfNoCase User-Agent "^Web\ Image\ Collector" bad_bot
+SetEnvIfNoCase User-Agent "^Web\ Sucker" bad_bot
+SetEnvIfNoCase User-Agent "^WebAuto" bad_bot
+SetEnvIfNoCase User-Agent "^WebBandit" bad_bot
+SetEnvIfNoCase User-Agent "^Webclipping.com" bad_bot
+SetEnvIfNoCase User-Agent "^WebCopier" bad_bot
+SetEnvIfNoCase User-Agent "^WebEMailExtrac.*" bad_bot
+SetEnvIfNoCase User-Agent "^WebEnhancer" bad_bot
+SetEnvIfNoCase User-Agent "^WebFetch" bad_bot
+SetEnvIfNoCase User-Agent "^WebGo\ IS" bad_bot
+SetEnvIfNoCase User-Agent "^Web.Image.Collector" bad_bot
+SetEnvIfNoCase User-Agent "^WebLeacher" bad_bot
+SetEnvIfNoCase User-Agent "^WebmasterWorldForumBot" bad_bot
+SetEnvIfNoCase User-Agent "^WebReaper" bad_bot
+SetEnvIfNoCase User-Agent "^WebSauger" bad_bot
+SetEnvIfNoCase User-Agent "^Website\ eXtractor" bad_bot
+SetEnvIfNoCase User-Agent "^Website\ Quester" bad_bot
+SetEnvIfNoCase User-Agent "^Webster" bad_bot
+SetEnvIfNoCase User-Agent "^WebStripper" bad_bot
+SetEnvIfNoCase User-Agent "^WebWhacker" bad_bot
+SetEnvIfNoCase User-Agent "^WebZIP" bad_bot
+SetEnvIfNoCase User-Agent "Whacker" bad_bot
+SetEnvIfNoCase User-Agent "^Widow" bad_bot
+SetEnvIfNoCase User-Agent "^WISENutbot" bad_bot
+SetEnvIfNoCase User-Agent "^WWWOFFLE" bad_bot
+SetEnvIfNoCase User-Agent "^WWW-Collector-E" bad_bot
+SetEnvIfNoCase User-Agent "^Xaldon" bad_bot
+SetEnvIfNoCase User-Agent "^Xenu" bad_bot
+SetEnvIfNoCase User-Agent "^Zeus" bad_bot
+SetEnvIfNoCase User-Agent "ZmEu" bad_bot
+SetEnvIfNoCase User-Agent "^Zyborg" bad_bot
+
+# Vulnerability Scanners
+SetEnvIfNoCase User-Agent "Acunetix" bad_bot
+SetEnvIfNoCase User-Agent "FHscan" bad_bot
+
+# Aggressive Chinese Search Engine
+#SetEnvIfNoCase User-Agent "Baiduspider" bad_bot
+
+# Aggressive Russian Search Engine
+#SetEnvIfNoCase User-Agent "Yandex" bad_bot
+
+SetEnvIfNoCase Referer "(peoplecheck|buttons-for-website)\." bad_bot
+# Keine Ahnung, ob das funktioniert, ob die Crawler haben
+SetEnvIfNoCase User-Agent "peoplecheck" bad_bot
+
+SetEnvIfNoCase User-Agent "(dubaiindex|adressendeutschland)" bad_bot
+
+#Ignorieren ronots.txt
+SetEnvIfNoCase User-Agent "(opensiteexplorer|dotbot)" bad_bot
+
+SetEnvIfNoCase Referer "Your-Website-Sucks" bad_bot
+SetEnvIfNoCase User-Agent "Your-Website-Sucks" bad_bot
+
+<Limit GET POST HEAD>
+Order Allow,Deny
+Allow from all
+
+# Cyveillance
+deny from 38.100.19.8/29
+deny from 38.100.21.0/24
+deny from 38.100.41.64/26
+deny from 38.105.71.0/25
+deny from 38.105.83.0/27
+deny from 38.112.21.140/30
+deny from 38.118.42.32/29
+deny from 65.213.208.128/27
+deny from 65.222.176.96/27
+deny from 65.222.185.72/29
+
+# Meine
+Deny from .obone.de
+Deny from verticalpigeon.com
+Deny from 178.238.232.57
+Deny from 184.235.238.178
+Deny from 178.238.235.184
+# kanadische ns504861.ip-192-99-149.net. Nerven.
+deny from 192.99.149.88
+
+# PHPCrawl, rufen robots.txt nicht ab. Auch wegen Spamaktivitäten bekannt.
+# m2726.contabo.host
+deny from 213.136.94.184
+
+##### START Eindeutige Zecken aus HETZNER-Netzwerk
+#static.132.145.9.5.clients.your-server.de
+SetEnvIfNoCase Remote_Host "^static\.132\.145\.9\.5\.clients\.your-server\.de" bad_bot
+
+##http://megaindex.com/crawler: kommerzielle Backlinkscrawler. Geben keine klare Instruktion wie robots.txt zu gestalten. Ignorieren außerdem nofollow
+#static.167.236.251.148.clients.your-server.de
+SetEnvIfNoCase User-Agent "MegaIndex" bad_bot
+
+###Zwar nicht oft, aber nahezu täglich und viele komplett veraltete Links
+#static.83.71.76.144.clients.your-server.de
+#static.81.106.9.5.clients.your-server.de
+SetEnvIfNoCase Remote_Host "^static\.83\.71\.76\.144\.clients\.your-server\.de" bad_bot
+SetEnvIfNoCase Remote_Host "^static\.81\.106\.9\.5\.clients\.your-server\.de" bad_bot
+
+##### START - Crawlers on the OVI network.
+# Scheiß Business-Dreck. Knattern extrem durch die Seiten. Kommen immer 1x mit wenig Seiten. Am nächsten Tag durchknattern.
+# Verlogenes BlahBlah: http://crawler.007ac9.net/. In Wahrheit SEO-Scheiß.
+#Erst mal mit robots.txt und User-agent: 007ac9 probiert. Dann weitersehen. Nein, klappt nicht (2018)
+SetEnvIfNoCase Remote_Host "^crawl\d+\.lp\.007ac9\.net" bad_bot
+#deny from 188.165.233.228 # crawl01.lp.007ac9.net
+#deny from 46.105.100.183 # crawl02.lp.007ac9.net
+#deny from 188.165.234.68 # crawl03.lp.007ac9.net
+#deny from 188.165.234.52 # crawl04.lp.007ac9.net
+#deny from 5.39.85.81 # crawl05.lp.007ac9.net
+#deny from 37.59.55.128 # crawl06.lp.007ac9.net
+#deny from 91.121.79.180 # crawl07.lp.007ac9.net
+#deny from 176.31.126.56 # crawl08.lp.007ac9.net
+#deny from 142.4.215.116 # crawl09.lp.007ac9.net
+#deny from 198.27.80.144 # crawl10.lp.007ac9.net
+# crawl11.lp.007ac9.net
+deny from 192.95.29.116 
+#deny from 94.23.27.166 # crawl12.lp.007ac9.net
+#deny from 188.165.196.25 # crawl13.lp.007ac9.net
+# crawl14.lp.007ac9.net
+deny from 188.165.208.29
+#deny from 94.23.40.23 # crawl15.lp.007ac9.net
+#deny from 188.165.233.34 # crawl16.lp.007ac9.net
+#deny from 37.187.56.81 # crawl17.lp.007ac9.net
+#deny from 37.187.56.76 # crawl18.lp.007ac9.net
+#deny from 37.187.56.66 # crawl19.lp.007ac9.net
+#deny from 46.105.98.166 # crawl20.lp.007ac9.net
+#deny from 37.187.56.47 # crawl21.lp.007ac9.net
+# ENDE - Crawlers on the OVI network
+
+# Hardcore-Hacker. Täglich mit anderem Prefix und Registrierungs(ver)suche.
+SetEnvIfNoCase Remote_Host "\.dynamic\.chello\.pl$" bad_bot
+
+## Sind ganz normale Suchmaschine, also OK.
+##SetEnvIfNoCase Remote_Host "^crawl.......mojeek.com$" bad_bot
+
+#savetheworldheritage und seoscanners.net, die sich abwechseln.
+#Hab ich aber auch noch mal namentlich oben unter badbots.
+# deny from al036.albit.fastwebserver.de
+deny from 146.0.32.165
+
+#Dubios. Scant alte Links. Wenige, aber zu oft Maillinks.
+#Backlink- und SEO-Crawler. Powered by SheerSEO.com
+deny from 199.187.122.91
+
+#Eindeutig bekannte Hacker. Werden aber in Access-Logs eh schon als 403 angezeigt.
+#Vielleicht von All-Inkl geblockt?
+deny from 85.214.212.205
+
+# dsystemip5.vhoster.org. Als blockiert angegeben auf blocklist.de.
+# Zwar wenig, aber ruft immer wieder selbe Seiten auf.
+deny from 91.200.12.7
+
+# Knattern mehrere Tage hintereinander pro Sekunde gutes Dutzend Seiten durch.
+# Viel zu schnell für humans.
+deny from 91.203.202.130
+
+
+Deny from env=bad_bot
+</Limit>
