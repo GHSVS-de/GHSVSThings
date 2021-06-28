@@ -71,5 +71,10 @@ elseif ($item->browserNav == 2)
 }
 
 #################### Override START
-echo HTMLHelper::_('link', OutputFilter::ampReplace(htmlspecialchars($item->flink, ENT_COMPAT, 'UTF-8', false)), $item->svg . $linktype, $attributes);
+// Füge $item->svg vor Titel hinzu.
+echo HTMLHelper::_('link', OutputFilter::ampReplace(
+	htmlspecialchars($item->flink, ENT_COMPAT, 'UTF-8', false)),
+	$item->svg . $linktype,
+	$attributes
+);
 #################### Override END
