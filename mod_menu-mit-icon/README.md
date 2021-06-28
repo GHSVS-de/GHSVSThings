@@ -8,3 +8,5 @@
 Siehe auch Kommentare `#################### Override` in den beiden Codes.
 
 Siehe auch https://forum.joomla.de/thread/13903-awesome-icon-als-men%C3%BC-titel-ohne-text/
+
+Da die `$item->svg` in der `default.php` generiert werden, stehen sie für alle Menü-Items zur Verfügung und können in allen Unter-Layouts der Art `default_xyz.php` verwendet werden.
