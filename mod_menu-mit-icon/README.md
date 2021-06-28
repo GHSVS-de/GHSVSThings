@@ -1,4 +1,4 @@
-# Override mit sauberem SPAN icon.
+# Override mit sauberem, separatem SPAN icon innerhalb des A-Links.
 ## Bedingungen/Ablauf
 - Eine Bild-CSS-Klasse [menu_image_css] ist im Menüpunkt eingetragen, also eine Icon-Klasse wie z.B. `icon-home`,
 - aber KEIN Bild ausgewählt.
