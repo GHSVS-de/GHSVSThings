@@ -14,12 +14,14 @@ use Joomla\CMS\Helper\ModuleHelper;
 #################### Override START
 foreach ($list as $i => &$item)
 {
+	// Neue Paranoia in J4 verhindert direkten zugriff auf die $item->params.
+	$itemParams = $item->getParams();
 	$item->svg = '';
 
 	// Wenn eine Bildklasse eingetragen, aber kein Bild gewählt, ...
 	if (
-		$menuImageCss = trim($item->params->get('menu_image_css', ''))
-		&& !$item->menu_image
+		($menuImageCss = trim($itemParams->get('menu_image_css', '')))
+		&& !$itemParams->get('item->menu_image', '')
 	){
 
 		// ... dann setze einen SPAN zusammen mit der Icon-Klasse.
@@ -35,6 +37,11 @@ foreach ($list as $i => &$item)
 		if ($item->params->get('menu_text', 1))
 		{
 			$item->svg .= ' ';
+		}
+		else
+		{
+			// Bug(?) fix Joomla 4 RC2. Dann wollen wir auch keinen Text.
+			$item->title = '';
 		}
 	}
 }
