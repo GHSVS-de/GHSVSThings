@@ -5,8 +5,11 @@ Auf das derzeitig komische Joomla 4 RC2 Verhalten, dass Titel nicht immer versch
 ## Bedingungen/Ablauf
 - Eine Bild-CSS-Klasse [menu_image_css] ist im Menüpunkt eingetragen, also eine Icon-Klasse wie z.B. `icon-home`,
 - aber KEIN Bild ausgewählt.
-- Dann wird eine eigene, neue Item-Eigenschaft `$item->svg` mit einem Icon-SPAN gefüllt. Siehe `default.php`. https://github.com/GHSVS-de/GHSVSThings/blob/master/mod_menu-mit-icon/default.php#L14-L41
+- Dann wird eine eigene, neue Item-Eigenschaft `$item->svg` mit einem Icon-SPAN gefüllt. Siehe `default.php`. https://github.com/GHSVS-de/GHSVSThings/blob/master/mod_menu-mit-icon/default.php#L14-L48
+
 - Der dann bei der Link-Generierung mit übergebem wird. Siehe `default_component.php`.https://github.com/GHSVS-de/GHSVSThings/blob/master/mod_menu-mit-icon/default_component.php#L73-L80
+
+- Zusätzlich wurde in folgenden Zeilen erzwungen, dass der Titel-Text nicht angezeigt wird, falls obige Bedingungen zutreffen PLUS "Titel anzeigen" auf NEIN steht. https://github.com/GHSVS-de/GHSVSThings/blob/master/mod_menu-mit-icon/default.php#L41-L45
 
 Siehe auch Kommentare `#################### Override` in den beiden Codes.
 
