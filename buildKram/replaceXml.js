@@ -111,11 +111,6 @@ module.exports.main = async (xmlFile, zipFilename, checksum, thisPackages) =>
 				xml = xml.replace(/{{thisPackages}}/g, thisPackages.join("\n"));
 			}
 
-			if (releaseTxt.requires && releaseTxt.requires.length)
-			{
-				xml = xml.replace(/{{requires}}/g, releaseTxt.requires.join("<br>"));
-			}
-
 			fileContent = fileContent + xml;
 		}
 
