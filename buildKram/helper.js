@@ -13,8 +13,8 @@ module.exports.cleanOut = async (cleanOuts) =>
 	for (const file of cleanOuts)
 	{
 		await rimRaf(file).then(
-			answer => console.log(pc.red(pc.bold(`rimRafed "${file}".`))
-		).catch(error => console.error('Error ' + error)));
+			answer => console.log(pc.red(pc.bold(`rimRafed "${file}".`)))
+		).catch(error => console.error('Error ' + error));
 	}
 }
 
