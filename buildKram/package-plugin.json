@@ -1,0 +1,86 @@
+{
+	"name": "plg_system_venoboxghsvs",
+	"nameReal": "plg_system_venoboxghsvs",
+	"filename": "venoboxghsvs",
+	"version": "2021.12.21",
+	"versionCompare": "2021.09.14",
+	"update": {
+		"type": "plugin",
+		"folder": "system",
+		"client": "site",
+		"tag": "stable",
+		"targetplatform": [
+			"3.*",
+			"4.*"
+		]
+	},
+	"releaseTxt": {
+		"title": "Joomla system plugin VenoboxGhsvs-v2plus",
+		"requires": []
+	},
+	"changelog": {
+		"projecturl": "https://github.com/GHSVS-de/plg_system_venoboxghsvs",
+		"infosDE": "",
+		"infosEN": "https://github.com/GHSVS-de/plg_system_venoboxghsvs#readme",
+		"docsDE": "https://ghsvs.de/programmierer-schnipsel/joomla/294-jhtml-htmlhelper-helper-fuer-venobox-in-joomla",
+		"docsEN": "",
+		"lastTests": [
+			"PHP 8.0",
+			"PHP 7.4",
+			"Joomla 3.10.4",
+			"Joomla 4.0.5"
+		]
+	},
+	"minimumPhp": "7.4.0",
+	"maximumPhp": "8.9999.9999",
+	"minimumJoomla": "3.10.4",
+	"maximumJoomla": "4.9999.9999",
+	"allowDowngrades": "1",
+	"creationDate": "2020-08-09",
+	"licenseLong": "GNU General Public License version 3 or later; see LICENSE.txt.",
+	"copyright": "(C) 2020, G@HService Berlin Neukölln, Volkmar Volli Schlothauer.",
+	"author": {
+		"name": "G@HService Berlin Neukölln, Volkmar Volli Schlothauer",
+		"email": "",
+		"url": "https://ghsvs.de"
+	},
+	"contributors": [
+		{
+			"name": "G@HService Berlin Neukölln, Volkmar Volli Schlothauer",
+			"email": "",
+			"url": "https://ghsvs.de"
+		}
+	],
+	"bugs": "https://github.com/GHSVS-de/plg_system_venoboxghsvs/issues",
+	"homepage": "https://github.com/GHSVS-de/plg_system_venoboxghsvs#readme",
+	"keywords": [
+		"joomla",
+		"system plugin",
+		"venobox",
+		"images"
+	],
+	"private": false,
+	"description": "Joomla system plugin. Integrate Venobox v2+ via JHtml/HtmlHelper in Joomla.",
+	"license": "GPL-3.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/GHSVS-de/plg_system_venoboxghsvs.git"
+	},
+	"scripts": {
+		"g-build": "node build.js",
+		"g-npm-update-check": "ncu",
+		"g-ncu-override-json": "ncu -u"
+	},
+	"dependencies": {
+		"npm-check-updates": "^12.0.5",
+		"venobox": "^2.0.4"
+	},
+	"devDependencies": {
+		"adm-zip": "^0.5.9",
+		"picocolors": "^1.0.0",
+		"fs-extra": "10.0.0",
+		"path": "^0.12.7",
+		"rimraf": "3.0.2"
+	},
+	"browserslist": []
+}

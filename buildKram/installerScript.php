@@ -4,7 +4,9 @@ defined('_JEXEC') or die;
 use Joomla\CMS\Installer\Installer;
 use Joomla\CMS\Installer\InstallerScript;
 use Joomla\CMS\Log\Log;
+use Joomla\CMS\Factory;
 
+// class mod_custom_blankGhsvsInstallerScript extends InstallerScript
 class plgSystemArticleConnectGhsvsInstallerScript extends InstallerScript
 {
 	/**
@@ -93,4 +95,60 @@ class plgSystemArticleConnectGhsvsInstallerScript extends InstallerScript
 			$this->removeFiles();
 		}
 	}
+
+	/**
+	* Remove the outdated updateservers.
+	*
+	* @return  void
+	*
+	* @since   version after 2021.12.21
+	*/
+	protected function removeOldUpdateservers()
+	{
+		return;
+
+
+
+		$db = Factory::getDbo();
+
+		try
+		{
+			$query = $db->getQuery(true);
+
+			$query->select('update_site_id')
+				->from($db->qn('#__update_sites'))
+				/* ->where($db->qn('location') . ' = '
+				. $db->q('https://raw.githubusercontent.com/GHSVS-de/upadateservers/master/bs3ghsvs2020-update.xml'), 'OR') */
+				->where($db->qn('location') . ' = '
+				. $db->q('https://raw.githubusercontent.com/GHSVS-de/upadateservers/master/venoboxghsvs-update.xml'));
+
+			$ids = $db->setQuery($query)->loadAssocList('update_site_id');
+
+			if (!$ids)
+			{
+				return;
+			}
+
+			$ids = \array_keys($ids);
+			$ids =\implode(',', $ids);
+
+			// Delete from update sites
+			$db->setQuery(
+				$db->getQuery(true)
+					->delete($db->qn('#__update_sites'))
+					->where($db->qn('update_site_id') . ' IN (' . $ids . ')')
+			)->execute();
+
+			// Delete from update sites extensions
+			$db->setQuery(
+				$db->getQuery(true)
+				->delete($db->qn('#__update_sites_extensions'))
+				->where($db->qn('update_site_id') . ' IN (' . $ids . ')')
+			)->execute();
+		}
+		catch (Exception $e)
+		{
+			return;
+		}
+ 	}
 }
