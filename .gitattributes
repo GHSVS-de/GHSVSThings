@@ -14,7 +14,6 @@
 *.yml   text eol=lf
 *.sh   text eol=lf
 
-
 # Don't diff or textually merge source maps
 *.map   binary
 

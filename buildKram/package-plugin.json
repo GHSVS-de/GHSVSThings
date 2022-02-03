@@ -29,7 +29,8 @@
 			"PHP 7.4",
 			"Joomla 3.10.4",
 			"Joomla 4.0.5"
-		]
+		],
+		"namespace": "Joomla\\Plugin\\System\\ImportfontsGhsvs"
 	},
 	"minimumPhp": "7.4.0",
 	"maximumPhp": "8.9999.9999",
@@ -68,11 +69,10 @@
 	},
 	"scripts": {
 		"g-build": "node build.js",
-		"g-npm-update-check": "ncu",
-		"g-ncu-override-json": "ncu -u"
+    "g-npm-update-check": "npm outdated",
+    "g-npm-update": "npm update --save-dev"
 	},
 	"dependencies": {
-		"npm-check-updates": "^12.0.5",
 		"venobox": "^2.0.4"
 	},
 	"devDependencies": {

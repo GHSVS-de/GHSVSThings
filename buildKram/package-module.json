@@ -12,7 +12,8 @@
 		"targetplatform": [
 			"3.*",
 			"4.*"
-		]
+		],
+		"namespace": "Joomla\\Module\\SwiperGhsvs"
 	},
 	"releaseTxt": {
 		"title": "Joomla site module mod_custom_blankGhsvs",

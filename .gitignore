@@ -19,3 +19,7 @@ src/vendor/scssphp/scssphp/bin/pscss
 /dist/*.xml
 /dist/*.txt
 _composer/vendor
+
+_site/
+resources/
+site/data/configCopy/

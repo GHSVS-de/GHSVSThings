@@ -60,7 +60,8 @@ module.exports.main = async (xmlFile, zipFilename, checksum, thisPackages) =>
 			targetPlatforms = [targetPlatforms.join(", ")];
 		}
 
-		// console.log(targetPlatforms);
+		let namespace = update.namespace ?
+			`<namespace path="src">${update.namespace}</namespace>` : "";
 
 		let fileContent = '';
 
@@ -94,6 +95,7 @@ module.exports.main = async (xmlFile, zipFilename, checksum, thisPackages) =>
 			xml = xml.replace(/{{minimumPhp}}/g, minimumPhp);
 			xml = xml.replace(/{{name}}/g, name);
 			xml = xml.replace(/{{nameReal}}/g, nameReal);
+			xml = xml.replace(/{{namespace}}/g, namespace);
 			xml = xml.replace(/{{nameUpper}}/g, name.toUpperCase());
 			xml = xml.replace(/{{php_minimum}}/g, minimumPhp);
 			xml = xml.replace(/{{projecturl}}/g, changelog.projecturl);
