@@ -12,11 +12,13 @@
 		"targetplatform": [
 			"3.*",
 			"4.*"
-		]
+		],
+		"namespace": "Joomla\\Plugin\\System\\ImportfontsGhsvs"
 	},
 	"releaseTxt": {
 		"title": "Joomla system plugin VenoboxGhsvs-v2plus",
-		"requires": []
+		"requires": [],
+		"uses": ["https://github.com/Splidejs"]
 	},
 	"changelog": {
 		"projecturl": "https://github.com/GHSVS-de/plg_system_venoboxghsvs",
@@ -29,8 +31,7 @@
 			"PHP 7.4",
 			"Joomla 3.10.4",
 			"Joomla 4.0.5"
-		],
-		"namespace": "Joomla\\Plugin\\System\\ImportfontsGhsvs"
+		]
 	},
 	"minimumPhp": "7.4.0",
 	"maximumPhp": "8.9999.9999",
@@ -77,9 +78,9 @@
 	},
 	"devDependencies": {
 		"adm-zip": "^0.5.9",
-		"picocolors": "^1.0.0",
 		"fs-extra": "10.0.0",
 		"path": "^0.12.7",
+		"picocolors": "^1.0.0",
 		"rimraf": "3.0.2"
 	},
 	"browserslist": []

@@ -17,7 +17,8 @@
 	},
 	"releaseTxt": {
 		"title": "Joomla site module mod_custom_blankGhsvs",
-		"requires": []
+		"requires": ["Freitexte kommasepariert"],
+		"uses": ["URLs kommasepariert"]
 	},
 	"changelog": {
 		"projecturl": "https://github.com/GHSVS-de/mod_custom_blankghsvs",
@@ -67,11 +68,10 @@
 	},
 	"scripts": {
 		"g-build": "node build.js",
-		"g-npm-update-check": "ncu",
-		"g-ncu-override-json": "ncu -u"
+    "g-npm-update-check": "npm outdated",
+    "g-npm-update": "npm update --save-dev"
 	},
 	"dependencies": {
-		"npm-check-updates": "^11.8.3"
 	},
 	"devDependencies": {
 		"adm-zip": "0.5.5",
