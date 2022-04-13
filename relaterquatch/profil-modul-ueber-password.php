@@ -55,6 +55,27 @@ $wa->useScript('keepalive')
 					<?php endif; ?>
 					<?php // Iterate through the fields in the set and display them. ?>
 					<?php foreach ($fields as $field) : ?>
+
+<?php
+if ($group === 'core' && $field->fieldname === 'password1')
+{
+	$output = array();
+	$modules = JModuleHelper::getModules('profilPasswordHint');
+
+	foreach ($modules as $module)
+	{
+		$output[] = JModuleHelper::renderModule($module, $attribs);
+	}
+
+	$output = join('', $output);
+?>
+
+<?php echo $output; ?>
+
+<?php
+} ?>
+
+
 						<?php echo $field->renderField(); ?>
 					<?php endforeach; ?>
 				</fieldset>
