@@ -10,7 +10,7 @@ templates/YOUR-TEMPLATE/html/layouts/joomla/password_hint.php
 
 Create language string:
 
-GHSVS_PASSWORD_REQUIREMENTS="<div class=password-requirements><ul class='list-unstyled list-striped'><li>muss eine Länge von mindestens %s Zeichen haben,</li><li>mindestens %s Zahlen enthalten,</li><li>mindestens %s Sonderzeichen enthalten (! &#64; # $ etc.),</li><li>mindestens %s Großbuchstaben enthalten</li><li>und darf keine Leerzeichen enthalten.</li></ul></div>"
+GHSVS_PASSWORD_REQUIREMENTS="<div class=password-requirements><ul class='list-unstyled list-striped'><li>muss eine Länge von mindestens %s Zeichen haben,</li><li>mindestens %s Zahlen enthalten,</li><li>mindestens %s Sonderzeichen enthalten (! &#64; # $ etc.),</li><li>mindestens %s Großbuchstaben enthalten</li><li>mindestens %s Kleinbuchstaben enthalten</li><li>und darf keine Leerzeichen enthalten.</li></ul></div>"
 
 
 Call somewhere in Joomla-Code (e.g. Template override of registration form):
@@ -44,7 +44,8 @@ defined('JPATH_BASE') or die;
 			 $userParams->get('minimum_length'),
 				$userParams->get('minimum_integers'),
 				$userParams->get('minimum_symbols'),
-				$userParams->get('minimum_uppercase')
+				$userParams->get('minimum_uppercase'),
+				$userParams->get('minimum_lowercase')
 			); ?>
       </div>
     </div>
