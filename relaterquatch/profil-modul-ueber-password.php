@@ -64,7 +64,7 @@ if ($group === 'core' && $field->fieldname === 'password1')
 
 	foreach ($modules as $module)
 	{
-		$output[] = JModuleHelper::renderModule($module, $attribs);
+		$output[] = JModuleHelper::renderModule($module);
 	}
 
 	$output = join('', $output);
