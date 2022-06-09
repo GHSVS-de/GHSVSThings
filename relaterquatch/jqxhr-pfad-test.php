@@ -1,7 +1,7 @@
 <script>
 jQuery(document).ready(function()
 	{
-    var jqxhr = jQuery.post( "assignment_update.php", function() {
+		var jqxhr = jQuery.post( "assignment_update.php", function() {
 		// var jqxhr = jQuery.post( "<?php echo JUri::root(true) . '/assignment_update.php' ?>", function() {
 			alert( "success" );
 		})
