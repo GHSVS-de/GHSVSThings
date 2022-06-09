@@ -2,6 +2,7 @@
 /*
 - Zeige Kommentare in weiterer Spalte.
 - Kopiere nach /administrator/templates/isis/html/com_redirect/links/default.php
+- Joomla 3.10
 */
 /**
  * @package     Joomla.Administrator
