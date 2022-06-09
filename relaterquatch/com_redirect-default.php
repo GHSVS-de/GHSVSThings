@@ -3,6 +3,9 @@
 - Zeige Kommentare in weiterer Spalte.
 - Kopiere nach /administrator/templates/isis/html/com_redirect/links/default.php
 - Joomla 3.10
+- Quelle: https://github.com/GHSVS-de/GHSVSThings/blob/master/relaterquatch/com_redirect-default.php
+- Quelle: https://forum.joomla.de/thread/16090-komponente-umleitung-kommentar-in-%C3%BCbersicht-anzeigen
+2022-06-09
 */
 /**
  * @package     Joomla.Administrator
