@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.6" type="plugin" group="user" method="upgrade">
+	<name>plg_user_autousergroupbyemail</name>
+	<author></author>
+	<creationDate>2017.01.22</creationDate>
+	<copyright></copyright>
+	<license></license>
+	<authorEmail>http://www.joomlaportal.de/joomla-3-x-sicherheit/327896-einteilung-der-nutzer-anhand-ihrer-email-adresse.html#post1635312</authorEmail>
+	<authorUrl></authorUrl>
+	<version>2017-01-21</version>
+	<description>User bei erstem Abspeichern, z.B. Registrierung, je nach Email in Usergruppen schieben. DIE KONFIGURATION WIRD IM PLUGIN-CODE DURCHGEFÜHRT.</description>
+	<files>
+		<filename plugin="autousergroupbyemail">autousergroupbyemail.php</filename>
+	</files>
+	<config />
+</extension>
