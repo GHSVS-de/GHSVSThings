@@ -51,7 +51,7 @@ Stichwort "x commits to main since this release".
 * [sass_compile_prefixghsvs](https://github.com/GHSVS-de/sass_compile_prefixghsvs/releases/latest)
 * [tpl_bs4ghsvs](https://github.com/GHSVS-de/tpl_bs4ghsvs/releases/latest)
 
-## Ohne Releases bzw. nicht (mehr) relevant
+## Ohne Releases und/oder nicht (mehr) relevant
 
 * https://github.com/GHSVS-de/buildKramGhsvs
 
