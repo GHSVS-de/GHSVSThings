@@ -12,7 +12,7 @@ Stichwort "x commits to main since this release".
 * [hugo_faviconsghsvs](https://github.com/GHSVS-de/hugo_faviconsghsvs/releases/latest)
 * [hugo_herzghsvs](https://github.com/GHSVS-de/hugo_herzghsvs/releases/latest)
 * [hugo_layoutsghsvs](https://github.com/GHSVS-de/hugo_layoutsghsvs/releases/latest)
-* [mod_administratorlinkghsvs](https://github.com/GHSVS-de/mod_administratorlinkghsvs/releases/latest)
+* [mod_administratorlinkghsvs](https://github.com/GHSVS-de/mod_administratorlinkghsvs/releases/latest) (4.2.0-dev test OK)
 * [mod_articles_categorytraditionalghsvs](https://github.com/GHSVS-de/mod_articles_categorytraditionalghsvs/releases/latest)
 * [mod_contactghsvs](https://github.com/GHSVS-de/mod_contactghsvs/releases/latest)
 * [mod_custom_blankghsvs](https://github.com/GHSVS-de/mod_custom_blankghsvs/releases/latest)
