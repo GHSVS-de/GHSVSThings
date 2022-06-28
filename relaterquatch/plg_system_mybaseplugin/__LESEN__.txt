@@ -1,0 +1,11 @@
+EIn Basis-Plugin für system.
+
+Ersetze in Dateinamen mybaseplugin
+
+Sprachplatzhalter (Großschrift) _MYBASEPLUGIN
+
+Dann in den Dateien mybaseplugin
+
+XML anpassen (VErsion etc.)
+
+INI anpassen.

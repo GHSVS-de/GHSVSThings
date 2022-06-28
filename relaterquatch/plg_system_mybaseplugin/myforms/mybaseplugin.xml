@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+ addfieldpath="plugins/system/mybaseplugin/fields"
+	addrulepath="plugins/system/mybaseplugin/rule">
+ 
+ <fields name="attribs">
+ </fields><!--/attribs-->
+
+</form>

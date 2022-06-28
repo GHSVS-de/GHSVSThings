@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" type="plugin" group="system" method="upgrade">
+ <name>PLG_SYSTEM_MYBASEPLUGIN</name>
+ <author>G@HService Berlin Neukölln, Volkmar Volli Schlothauer (ghsvs.de)</author>
+ <creationDate>2015-12-11</creationDate>
+ <copyright>Copyright (C) 2013 - 2019, G@HService Berlin Neukölln, Volkmar Volli Schlothauer. All rights reserved.</copyright>
+ <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+ <authorUrl>https://www.ghsvs.de</authorUrl>
+ <version>2019.07.05</version>
+    <versionHistory>
+
+    </versionHistory>
+ <description>PLG_SYSTEM_MYBASEPLUGIN_XML_DESCRIPTION</description>
+ <updateservers><server type="extension" priority="1" name="PLG_SYSTEM_MYBASEPLUGIN">http://snapshots.ghsvs.de/updates/joomla/plg_system_mybaseplugin.xml</server></updateservers>
+ <files>
+  <filename plugin="mybaseplugin">mybaseplugin.php</filename>
+  <filename>LICENSE.txt</filename>
+  <folder>Helper</folder>
+  <folder>Field</folder>
+  <folder>Html</folder>
+  <folder>language</folder>
+  <folder>myforms</folder>
+ </files>
+
+ <media folder="media" destination="plg_system_mybaseplugin">
+  <folder>css</folder>
+  <folder>js</folder>
+ </media>
+
+ <config>
+  <fields name="params" addfieldpath="plugins/system/mybaseplugin/Field">
+   <fieldset name="basic">
+    <field type="hidden" default="1" name="mybasepluginplugin" />
+   </fieldset>
+  </fields>
+ </config>
+</extension>
