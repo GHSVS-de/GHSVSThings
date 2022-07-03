@@ -40,8 +40,11 @@ public function onAfterModuleList($modules)
 }
 
 /*
-Und so könnten die Felder für Konfiguration aussehen, die man den Modulen
+Und so könnten die Felder für Konfiguration aussehen (in Joomla 4!), die man den Modulen
 zusätzlich unterjubeln muss, z.B. via onContentPrepareForm im selben System-Plugin wie oben.
+Joomla 3 kennt type="ModulesPositionedit" nicht und zeigt dann nur ein Textfeld
+an! Muss man wahrscheinlich type="modulesposition" versuchen. Oder lebt eben mit
+dem Textfeld.
 */
 <field name="modulePosition" type="ModulesPositionedit"
 	client="site"
