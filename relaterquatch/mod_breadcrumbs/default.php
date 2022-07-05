@@ -111,7 +111,7 @@ use Joomla\CMS\WebAsset\WebAssetManager;
 		}
 	}
 
-	if (!empty($data['itemListElement']))
+	if (count($data['itemListElement']))
 	{
 		/** @var WebAssetManager $wa */
 		$wa = $app->getDocument()->getWebAssetManager();
