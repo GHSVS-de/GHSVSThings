@@ -4,6 +4,7 @@
 - Bug-Fix für https://forum.joomla.de/thread/16214-google-search-sonsole-zeigt-falscher-werttyp-id-an
 - Kopiere diese Datei nach
 /templates/DEINTEMPLATENAME/html/mod_breadcrumbs/default.php
+- 2022-07-05
 */
 /**
  * @package     Joomla.Site
