@@ -50,6 +50,14 @@ use Joomla\CMS\WebAsset\WebAssetManager;
 
         // Generate the trail
         foreach ($list as $key => $item) :
+
+if ($params->get('showHome', 1) && $key === 0)
+{
+	// Store name for ld+json.
+	$savedName = $item->name;
+	$item->name = '<i class="bi bi-house">quack</i>';
+}
+
             if ($key !== $last_item_key) :
                 if (!empty($item->link)) :
                     $breadcrumbItem = HTMLHelper::_('link', Route::_($item->link), '<span>' . $item->name . '</span>', ['class' => 'pathway']);
@@ -90,6 +98,12 @@ use Joomla\CMS\WebAsset\WebAssetManager;
     }
 
     foreach ($list as $key => $item) {
+
+if ($key === 0 && isset($savedName))
+{
+	$item->name = $savedName;
+}
+
         // Only add item to JSON if it has a valid link, otherwise skip it.
         if (!empty($item->link)) {
             $data['itemListElement'][] = [
