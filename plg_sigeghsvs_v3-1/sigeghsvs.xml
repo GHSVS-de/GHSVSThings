@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.0" group="content" method="upgrade">
+<name>PLG_SIGEGHSVS</name>
+<author>Viktor Vogel; edit GHSVS</author>
+<creationDate>11-Oct-2012; edit 11-2012</creationDate>
+<copyright>GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</copyright>
+<authorEmail>admin@kubik-rubik.de; edit sigeghsvs@ghsvs.de</authorEmail>
+<authorUrl>http://joomla-extensions.kubik-rubik.de/; edit http://www.ghsvs.de/</authorUrl>
+<version>0.0.1</version>
+<description>PLG_SIGEGHSVS_XML_DESCRIPTION</description>
+<files>
+ <filename plugin="sigeghsvs">sigeghsvs.php</filename>
+ <filename plugin="sigeghsvs">index.html</filename>
+ <folder plugin="sigeghsvs">plugin_sigeghsvs</folder>
+ <folder plugin="sigeghsvs">plugin_sigeghsvs</folder>
+ <folder plugin="sigeghsvs">language</folder>
+</files>
+<!--<languages>
+ <language tag="en-GB">language/en-GB/en-GB.plg_content_sigeghsvs.ini</language>
+ <language tag="en-GB">language/en-GB/en-GB.plg_content_sigeghsvs.sys.ini</language>
+ <language tag="de-DE">language/de-DE/de-DE.plg_content_sigeghsvs.ini</language>
+ <language tag="de-DE">language/de-DE/de-DE.plg_content_sigeghsvs.sys.ini</language>
+</languages>-->
+<config>
+<fields name="params">
+ <fieldset name="SIGEGHSVS_GALLERY">
+  <field name="cclicence" type="list" default="BYNCND" label="PLG_SIGEGHSVS_CCLICENCE_LBL" description="PLG_SIGEGHSVS_CCLICENCE_DESC">
+   <option value="BYNCND">BYNCND</option>
+   <option value="0">JNO</option>
+  </field>
+		<!--Generate and save thumbnails - 1 = yes, 0 = no-->
+  <field name="thumbs" type="list" default="1" label="PLG_SIGEGHSVS_THUMBS" description="PLG_SIGEGHSVS_THUMBSDESC">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+  <field name="thumbs_new" type="list" default="0" label="PLG_SIGEGHSVS_THUMBSNEW" description="PLG_SIGEGHSVS_THUMBSNEWDESC">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+  <field name="root" type="list" default="0" label="PLG_SIGEGHSVS_ROOT" description="PLG_SIGEGHSVS_ROOTDESC">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+  <!--Vertikaler Abstand der Bilder-->
+  <field name="gap_v" type="text" default="50" size="5" label="PLG_SIGEGHSVS_GAPV" description="PLG_SIGEGHSVS_GAPVDESC" />
+  <field name="gap_h" type="text" default="30" size="5" label="PLG_SIGEGHSVS_GAPH" description="PLG_SIGEGHSVS_GAPHDESC" />
+  <field name="random" type="list" default="1" label="PLG_SIGEGHSVS_RANDOM" description="PLG_SIGEGHSVS_RANDOMDESC">
+   <option value="1">JYES</option>
+   <option value="2">PLG_SIGEGHSVS_NOASC</option>
+   <option value="3">PLG_SIGEGHSVS_NODESC</option>
+   <option value="4">PLG_SIGEGHSVS_TIMEASC</option>
+   <option value="5">PLG_SIGEGHSVS_TIMEDESC</option>
+  </field>
+  <field name="view" type="list" default="1" label="PLG_SIGEGHSVS_VIEW" description="PLG_SIGEGHSVS_VIEWDESC">
+   <option value="0">Slimbox</option>
+   <option value="1">Lytebox</option>
+   <option value="2">Lyteshow</option>
+   <option value="3">Shadowbox</option>
+   <option value="4">Milkbox</option>
+  </field>
+  <field name="js" type="list" default="1" label="PLG_SIGEGHSVS_JS" description="PLG_SIGEGHSVS_JSDESC">
+   <option value="0">PLG_SIGEGHSVS_SLIMBOXJS</option>
+   <option value="1">PLG_SIGEGHSVS_LYTEBOXJS</option>
+   <option value="2">PLG_SIGEGHSVS_SHADOWBOXJS</option>
+   <option value="3">PLG_SIGEGHSVS_MILKBOXJS</option>
+   <option value="4">JNO</option>
+  </field>
+  <field name="limit" type="list" default="0" label="PLG_SIGEGHSVS_LIMIT" description="PLG_SIGEGHSVS_LIMITDESC">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+  <field name="limit_quantity" type="text" default="10" size="5" label="PLG_SIGEGHSVS_LIMITQUANTITY" description="PLG_SIGEGHSVS_LIMITQUANTITYDESC" />
+  <field name="column_quantity" type="text" default="" size="5" label="PLG_SIGEGHSVS_COLUMNQUANTITY" description="PLG_SIGEGHSVS_COLUMNQUANTITYDESC" />
+  <!--CSS Bildertooltip-->
+  <field name="css_image" type="list" default="0" label="PLG_SIGEGHSVS_CSSIMAGE" description="PLG_SIGEGHSVS_CSSIMAGEDESC">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+  <field name="css_image_half" type="list" default="0" label="PLG_SIGEGHSVS_CSSIMAGEHALF" description="PLG_SIGEGHSVS_CSSIMAGEHALFDESC">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+  <field name="noslim" type="list" default="0" label="PLG_SIGEGHSVS_NOSLIM" description="PLG_SIGEGHSVS_NOSLIMDESC">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+  <field name="list" type="list" default="0" label="PLG_SIGEGHSVS_LIST" description="PLG_SIGEGHSVS_LISTDESC">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+  <!--Bildunterschrift-->
+  <field name="caption" type="list" default="1" label="PLG_SIGEGHSVS_CAPTION" description="PLG_SIGEGHSVS_CAPTIONDESC">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+  <field name="image_link" type="text" default="" size="50" label="PLG_SIGEGHSVS_IMAGELINK" description="PLG_SIGEGHSVS_IMAGELINKDESC" />
+  <field name="image_link_new" type="list" default="0" label="PLG_SIGEGHSVS_IMAGELINKNEW" description="PLG_SIGEGHSVS_IMAGELINKNEWDESC">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+ </fieldset>
+ <fieldset name="SIGEGHSVS_THUMBNAIL">
+  <field name="width" type="text" default="200" size="5" label="PLG_SIGEGHSVS_WIDTHTHUMBS" description="PLG_SIGEGHSVS_WIDTHTHUMBSDESC" />
+  <field name="height" type="text" default="200" size="5" label="PLG_SIGEGHSVS_HEIGHTTHUMBS" description="PLG_SIGEGHSVS_HEIGHTTHUMBSDESC" />
+  <field name="ratio" type="list" default="0" label="PLG_SIGEGHSVS_RATIO" description="">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+  <field name="calcmaxthumbsize" type="list" default="1" label="PLG_SIGEGHSVS_CALCMAXTHUMBSIZE" description="PLG_SIGEGHSVS_CALCMAXTHUMBSIZEDESC">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+  <field name="quality" type="text" default="80" size="5" label="PLG_SIGEGHSVS_QUALITYJPG" description="PLG_SIGEGHSVS_QUALITYJPGDESC" />
+  <field name="quality_png" type="text" default="6" size="5" label="PLG_SIGEGHSVS_QUALITYPNG" description="PLG_SIGEGHSVS_QUALITYPNGDESC" />
+  <field name="thumbdetail" type="list" default="0" label="PLG_SIGEGHSVS_THUMBNAILDETAIL" description="PLG_SIGEGHSVS_THUMBNAILDETAILDESC">
+   <option value="0">1:1</option>
+   <option value="1">PLG_SIGEGHSVS_TOPLEFT</option>
+   <option value="2">PLG_SIGEGHSVS_TOPRIGHT</option>
+   <option value="3">PLG_SIGEGHSVS_BOTTOMLEFT</option>
+   <option value="4">PLG_SIGEGHSVS_BOTTOMRIGHT</option>
+  </field>
+  <field name="crop" type="list" default="1" label="PLG_SIGEGHSVS_CROP" description="PLG_SIGEGHSVS_CROPDESC">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+  <field name="crop_factor" type="text" default="50" size="5" label="PLG_SIGEGHSVS_CROPFACTOR" description="PLG_SIGEGHSVS_CROPFACTORDESC" />
+ </fieldset>
+ <fieldset name="SIGEGHSVS_IMAGE">
+  <field name="resize_images" type="list" default="1" label="PLG_SIGEGHSVS_RESIZEIMAGES" description="PLG_SIGEGHSVS_RESIZEIMAGESDESC">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+  <field name="images_new" type="list" default="0" label="PLG_SIGEGHSVS_IMAGESNEW" description="PLG_SIGEGHSVS_IMAGESNEWDESC">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+  <field name="width_image" type="text" default="650" size="5" label="PLG_SIGEGHSVS_WIDTHIMAGETHUMBS" description="PLG_SIGEGHSVS_WIDTHIMAGETHUMBSDESC" />
+  <field name="height_image" type="text" default="650" size="5" label="PLG_SIGEGHSVS_HEIGHTIMAGETHUMBS" description="PLG_SIGEGHSVS_HEIGHTIMAGETHUMBSDESC" />
+  <field name="ratio_image" type="list" default="1" label="PLG_SIGEGHSVS_RATIOIMAGE" description="">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+ </fieldset>
+ <fieldset name="SIGEGHSVS_JSVIEW">
+	
+  <field name="image_info" type="radio" class="btn-group" default="1"
+		 label="PLG_SIGEGHSVS_IMAGEINFO"
+			description="PLG_SIGEGHSVS_IMAGEINFODESC">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>	
+  <field name="fileinfo" type="radio" class="btn-group" default="1"
+		 label="PLG_SIGEGHSVS_FILEINFO"
+			description="PLG_SIGEGHSVS_FILEINFODESC">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+  <field name="fileinfo_part2" type="radio" class="btn-group" default="0"
+		 label="captions.txt&lt;br /&gt;Bildbeschreibung"
+			description="captions.txt ist in mehrere Teile gegliedert. Der 1.Teil ist ein Bildtitel. Der 2.Teil ist eine Bildbeschreibung. Der 2. Teil kann deaktiviert werden.">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+	
+
+  <field name="download" type="list" default="0" label="PLG_SIGEGHSVS_DOWNLOAD" description="PLG_SIGEGHSVS_DOWNLOADDESC">
+   <option value="1">JYES</option>
+   <option value="0">JNO</option>
+  </field>
+
+
+
+ </fieldset>
+		<fieldset name="SIGEGHSVS_WATERMARK">
+			<field name="watermark" type="list" default="1" label="PLG_SIGEGHSVS_WATERMARK" description="PLG_SIGEGHSVS_WATERMARKDESC">
+    <option value="1">JYES</option>
+    <option value="0">JNO</option>
+			</field>
+			<field name="watermark_new" type="list" default="0" label="PLG_SIGEGHSVS_WATERMARKNEW" description="PLG_SIGEGHSVS_WATERMARKNEWDESC">
+    <option value="1">JYES</option>
+    <option value="0">JNO</option>
+			</field>
+			<field name="watermarkposition" type="list" default="3" label="PLG_SIGEGHSVS_WATERMARKPOSITION" description="">
+    <option value="0">CENTER</option>
+    <option value="1">PLG_SIGEGHSVS_TOPLEFT</option>
+    <option value="2">PLG_SIGEGHSVS_TOPRIGHT</option>
+    <option value="3">PLG_SIGEGHSVS_BOTTOMLEFT</option>
+    <option value="4">PLG_SIGEGHSVS_BOTTOMRIGHT</option>
+			</field>
+			<field name="encrypt" type="list" default="50" label="PLG_SIGEGHSVS_ENCRYPT" description="ENCRYPTDESC">
+    <option value="0">ROT13</option>
+    <option value="1">MD5</option>
+    <option value="2">SHA1</option>
+    <option value="50">Bildname aus captions.txt neu. ggf. MD5</option>
+			</field>
+		</fieldset>
+
+</fields>
+</config>
+</extension>
