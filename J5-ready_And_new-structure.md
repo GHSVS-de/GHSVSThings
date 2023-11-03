@@ -11,7 +11,7 @@ Repo | J!5 | new structure
  plg_system_backupslogghsvs | + | +
  plg_system_insertwhatwhereghsvs | + | NO!
  mod_downloadaccordionghsvs | NO! | NO!
- pkg_file_assetghsvs | NO! | NO!
+ pkg_file_assetghsvs | + | no need
  plg_system_lessghsvs | NO! | NO!
  mod_downloadcardsghsvs | NO! | NO!
  mod_custom_blankGhsvs | + | +
