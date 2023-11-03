@@ -15,7 +15,7 @@ Repo | J!5 | new structure
  plg_system_lessghsvs | NO! | NO!
  mod_downloadcardsghsvs | NO! | NO!
  mod_custom_blankGhsvs | + | +
- A3 | B3 | C3
+ plg_system_offlineghsvs | + | +
  A3 | B3 | C3
  A3 | B3 | C3
  A3 | B3 | C3
