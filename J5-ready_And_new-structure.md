@@ -17,7 +17,7 @@ Repo | J!5 | new structure
  mod_custom_blankGhsvs | + | +
  plg_system_offlineghsvs | + | +
  plg_system_onuserghsvs | + | +
- A3 | B3 | C3
+ pkg_file_iconsghsvs | + | no need
  A3 | B3 | C3
  A3 | B3 | C3
  A3 | B3 | C3
