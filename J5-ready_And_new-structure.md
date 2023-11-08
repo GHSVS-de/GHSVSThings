@@ -20,8 +20,8 @@ Repo | J!5 | new structure
  pkg_file_iconsghsvs | + | no need
  plg_system_slscrolltotopghsvs  | + | +
  mod_extensionarticlesghsvs | + | +
- A3 | B3 | C3
- A3 | B3 | C3
+ mod_articles_categorytraditionalghsvs | NO! | NO!
+ mod_footerghsvs | + | +
  A3 | B3 | C3
  A3 | B3 | C3
  A3 | B3 | C3
