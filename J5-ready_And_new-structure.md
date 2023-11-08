@@ -19,7 +19,7 @@ Repo | J!5 | new structure
  plg_system_onuserghsvs | + | +
  pkg_file_iconsghsvs | + | no need
  plg_system_slscrolltotopghsvs  | + | +
- A3 | B3 | C3
+ mod_extensionarticlesghsvs | + | +
  A3 | B3 | C3
  A3 | B3 | C3
  A3 | B3 | C3
