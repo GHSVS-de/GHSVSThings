@@ -6,7 +6,7 @@ Repo | J!5 | new structure
  mod_toastGhsvs | + | +
  mod_splideghsvs | + | NO!
  plg_system_hyphenateghsvs_slim | + | +
- plg_system_venoboxghsvs | + | NO!
+ plg_system_venoboxghsvs | + | +
  mod_administratorlinkghsvs | + | +
  plg_system_backupslogghsvs | + | +
  plg_system_insertwhatwhereghsvs | + | NO!
@@ -18,6 +18,7 @@ Repo | J!5 | new structure
  plg_system_offlineghsvs | + | +
  plg_system_onuserghsvs | + | +
  pkg_file_iconsghsvs | + | no need
+ plg_system_iconsghsvs | + | +
  plg_system_slscrolltotopghsvs  | + | +
  mod_extensionarticlesghsvs | + | +
  mod_articles_categorytraditionalghsvs | NO! | NO!
