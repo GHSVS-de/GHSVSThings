@@ -24,7 +24,7 @@ Repo | J!5 | new structure | Releases
  mod_articles_categorytraditionalghsvs | NO! | NO!
  mod_footerghsvs | + | +
  plg_system_pagebreaksliderghsvs | + | + | [plg_system_pagebreaksliderghsvs](https://github.com/GHSVS-de/plg_system_pagebreaksliderghsvs/releases)
- A3 | B3 | C3
+ plg_editors-xtd_pagebreakghsvs | + | NO! | [plg_editors-xtd_pagebreakghsvs](https://github.com/GHSVS-de/plg_editors-xtd_pagebreakghsvs/releases)
  A3 | B3 | C3
  A3 | B3 | C3
  A3 | B3 | C3
