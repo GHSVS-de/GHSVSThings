@@ -23,6 +23,7 @@ Repo | J!5 | new structure
  mod_extensionarticlesghsvs | + | +
  mod_articles_categorytraditionalghsvs | NO! | NO!
  mod_footerghsvs | + | +
+ plg_system_pagebreaksliderghsvs | + | +
  A3 | B3 | C3
  A3 | B3 | C3
  A3 | B3 | C3
