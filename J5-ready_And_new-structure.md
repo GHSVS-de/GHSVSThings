@@ -16,7 +16,7 @@ Repo | J!5 | new structure | Releases
  mod_downloadcardsghsvs | NO! | NO!
  mod_custom_blankGhsvs | + | +
  plg_system_offlineghsvs | + | +
- plg_system_onuserghsvs | + | +
+ plg_system_onuserghsvs | + | + | [plg_system_onuserghsvs](https://github.com/GHSVS-de/plg_system_onuserghsvs/releases)
  pkg_file_iconsghsvs | + | no need
  plg_system_iconsghsvs | + | +
  plg_system_slscrolltotopghsvs  | + | +
