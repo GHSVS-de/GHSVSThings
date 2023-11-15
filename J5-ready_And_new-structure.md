@@ -22,7 +22,7 @@ Repo | J!5 | new structure | Releases
  plg_system_slscrolltotopghsvs  | + | +
  mod_extensionarticlesghsvs | + | +
  mod_articles_categorytraditionalghsvs | NO! | NO!
- mod_footerghsvs | + | +
+ mod_footerghsvs | + | + | [mod_footerghsvs](https://github.com/GHSVS-de/mod_footerghsvs/releases)
  plg_system_pagebreaksliderghsvs | + | + | [plg_system_pagebreaksliderghsvs](https://github.com/GHSVS-de/plg_system_pagebreaksliderghsvs/releases)
  plg_editors-xtd_pagebreakghsvs | + | NO! | [plg_editors-xtd_pagebreakghsvs](https://github.com/GHSVS-de/plg_editors-xtd_pagebreakghsvs/releases)
  A3 | B3 | C3
