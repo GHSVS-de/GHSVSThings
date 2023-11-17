@@ -3,8 +3,11 @@ Repo | J!5 | new structure | Releases
 ---------|----------|---------|---------
  plg_system_importfontsghsvs | + | +
  plg_content_menudatealiasghsvs | + | +
- mod_toastGhsvs | + | + | [mod_toastGhsvs](https://github.com/GHSVS-de/mod_toastGhsvs/releases)
+ mod_custom_blankGhsvs | + | +
+ mod_downloadcardsghsvs | NO! | NO!
  mod_splideghsvs | + | NO!
+ mod_toastGhsvs | + | + | [mod_toastGhsvs](https://github.com/GHSVS-de/mod_toastGhsvs/releases)
+ mod_tocghsvs | NO! | NO!
  plg_system_hyphenateghsvs_slim | + | +
  plg_system_venoboxghsvs | + | + | [plg_system_venoboxghsvs](https://github.com/GHSVS-de/plg_system_venoboxghsvs/releases)
  mod_administratorlinkghsvs | + | +
@@ -13,8 +16,8 @@ Repo | J!5 | new structure | Releases
  mod_downloadaccordionghsvs | NO! | NO!
  pkg_file_assetghsvs | + | no need
  plg_system_lessghsvs | NO! | NO!
- mod_downloadcardsghsvs | NO! | NO!
- mod_custom_blankGhsvs | + | +
+
+
  plg_system_offlineghsvs | + | + | [plg_system_offlineghsvs](https://github.com/GHSVS-de/plg_system_offlineghsvs/releases)
  plg_system_onuserghsvs | + | + | [plg_system_onuserghsvs](https://github.com/GHSVS-de/plg_system_onuserghsvs/releases)
  pkg_file_iconsghsvs | + | no need
