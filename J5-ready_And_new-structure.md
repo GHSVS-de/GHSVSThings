@@ -3,7 +3,7 @@ Repo | J!5 | new structure | Releases
 ---------|----------|---------|---------
  plg_system_importfontsghsvs | + | +
  plg_content_menudatealiasghsvs | + | +
- mod_toastGhsvs | + | +
+ mod_toastGhsvs | + | + | [mod_toastGhsvs](https://github.com/GHSVS-de/mod_toastGhsvs/releases)
  mod_splideghsvs | + | NO!
  plg_system_hyphenateghsvs_slim | + | +
  plg_system_venoboxghsvs | + | + | [plg_system_venoboxghsvs](https://github.com/GHSVS-de/plg_system_venoboxghsvs/releases)
