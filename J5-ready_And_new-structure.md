@@ -10,9 +10,9 @@ Repo | J!5 | new structure | Releases
  mod_splideghsvs | + | NO!
  mod_toastGhsvs | + | + | [mod_toastGhsvs](https://github.com/GHSVS-de/mod_toastGhsvs/releases)
  mod_tocghsvs | NO! | NO!
+ plg_system_hyphenateghsvs_slim | + | +
  plg_system_importfontsghsvs | + | +
  plg_content_menudatealiasghsvs | + | +
- plg_system_hyphenateghsvs_slim | + | +
  plg_system_venoboxghsvs | + | + | [plg_system_venoboxghsvs](https://github.com/GHSVS-de/plg_system_venoboxghsvs/releases)
  plg_system_backupslogghsvs | + | +
  plg_system_insertwhatwhereghsvs | + | NO!
@@ -26,6 +26,7 @@ Repo | J!5 | new structure | Releases
  plg_system_slscrolltotopghsvs  | + | + | [plg_system_slscrolltotopghsvs](https://github.com/GHSVS-de/plg_system_slscrolltotopghsvs/releases)
  plg_system_pagebreaksliderghsvs | + | + | [plg_system_pagebreaksliderghsvs](https://github.com/GHSVS-de/plg_system_pagebreaksliderghsvs/releases)
  plg_editors-xtd_pagebreakghsvs | + | NO! | [plg_editors-xtd_pagebreakghsvs](https://github.com/GHSVS-de/plg_editors-xtd_pagebreakghsvs/releases)
+ plg_system_onurlrobotsghsvs | + | + | [plg_system_onurlrobotsghsvs](https://github.com/GHSVS-de/plg_system_onurlrobotsghsvs/releases)
  A3 | B3 | C3
  A3 | B3 | C3
  A3 | B3 | C3
