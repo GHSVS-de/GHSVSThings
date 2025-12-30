@@ -1,5 +1,5 @@
 <?php
-
+## ANleitung: Siehe https://github.com/GHSVS-de/GHSVSThings/wiki/mod_custom%E2%80%90random-posTralala.php
 /**
  * @package     Joomla.Site
  * @subpackage  mod_custom
